@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Header { 
+  grid-area: header;
+  text-align: center;
+  padding: 1rem 0;
+  padding-left: 6%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  float: right;
+}
+
+.Menu { 
+  grid-area: menu;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-top { 
+  grid-area: main-top;
+  text-align: center;
+  padding: 1rem 30%;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-bottom { 
+  grid-area: main-bottom;
+  text-align: center;
+  padding: 1rem 0;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.DarkMode{
+  background-color: #181a1f;
+  color: #ffffff;
+}
+
+.LightMode{
+  background-color: #ffffff;
+  color: #181a1f;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'menu main-top'
+    'menu main-bottom';
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 0;
+  grid-template-columns: 2.5fr 7.5fr;
+  grid-template-rows: 12% 12% 73%;
+  height: 97.5vh;
+}
+
+.grid-container-dark {
+  background-color: #282c34;
+}
+
+.grid-container-light {
+  background-color: #BEBEBE;
+}
+
+.Button-blue{
+  width: 50%;
+  height: 7vh;
+  background: none;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #b2f2ec;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.Button-red{
+  width: 50%;
+  height: 7vh;
+  background: none;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #ff7070;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.Button-light{
+  width: 13.5%;
+  height: 7vh;
+  background: none;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #181a1f;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.Button-dark{
+  width: 13.5%;
+  height: 7vh;
+  background: none;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
